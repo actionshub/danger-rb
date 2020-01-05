@@ -1,0 +1,9 @@
+name: 'Test action'
+author: 'Jason Field'
+description: 'Playground, do not use'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'tool'
+  color: 'red'
