@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@master
-      - name: Run Chef Delivery
+      - name: Run Danger
         uses: actionshub/danger-rb@master
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
