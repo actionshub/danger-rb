@@ -7,18 +7,20 @@ A Github Action to run Danger for Ruby
 ## Usage
 
 ```yaml
-name: delivery
+name: danger
 
 on: [push, pull_request]
 
 jobs:
-  delivery:
+  danger:
 
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Run Danger
         uses: actionshub/danger-rb@master
         env:
