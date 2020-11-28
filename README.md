@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Danger
-        uses: actionshub/danger-rb@master
+        uses: actionshub/danger-rb@main
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
