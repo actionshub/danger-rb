@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:3-slim
 
 RUN gem install danger
 
