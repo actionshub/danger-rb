@@ -14,9 +14,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
-          release-type: simple
           package-name: ${{ github.repository }}
-          version-file: action.yml
 
       - name: Get the tag version
         id: get_tag
