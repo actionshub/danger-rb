@@ -15,6 +15,8 @@ jobs:
         id: release
         with:
           package-name: ${{ github.repository }}
+          release-type: generic
+          version-file: action.yml
 
       - name: Get the tag version
         id: get_tag
