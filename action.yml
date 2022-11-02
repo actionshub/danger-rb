@@ -1,9 +1,9 @@
 name: 'actionshub-danger-rb'
 author: 'Jason Field'
-description: 'Playground, do not use'
+description: 'Runs danger.systems on a PR'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: docker://ghcr.io/actionshub/danger-rb:edge
 branding:
-  icon: 'tool'
+  icon: 'git-pull-request'
   color: 'red'
