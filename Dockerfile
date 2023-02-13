@@ -1,9 +1,7 @@
-FROM ruby:3-slim
+FROM ruby:3.2.1-alpine3.17
 
-RUN gem install danger
-RUN apt update && \
-	apt install git -y &&\
-	apt upgrade -y &&\
-	rm -rf /var/lib/apt/lists/*
+COPY Gemfile Gemfile.lock /
+RUN apk add --no-cache git \
+	&& bundle install
 
 ENTRYPOINT ["danger"]
