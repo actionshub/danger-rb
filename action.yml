@@ -3,7 +3,7 @@ author: "Jason Field"
 description: "Runs danger.systems on a PR"
 runs:
   using: "docker"
-  image: docker://ghcr.io/actionshub/danger-rb:v2.1.2
+  image: docker://ghcr.io/actionshub/danger-rb:v2.1.3
 branding:
   icon: "git-pull-request"
   color: "red"
